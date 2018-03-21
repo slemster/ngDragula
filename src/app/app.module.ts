@@ -1,8 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-
-import { AppComponent } from './app.component';
+import { NgModule }      from '@angular/core';
+import { AppComponent }  from './app.component';
+import { DragulaModule } from '../../node_modules/ng2-dragula';
 
 
 @NgModule({
@@ -10,7 +9,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    DragulaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
